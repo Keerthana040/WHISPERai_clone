@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Audio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Upload an Audio File</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Sidebar content -->
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        <strong>Menu</strong>
+                    </a>
+                    <a href="#transcribe-section" class="list-group-item list-group-item-action">Transcribe Audio</a>
+                    <a href="#language-detection-section" class="list-group-item list-group-item-action">Detect Language</a>
+                    <a href="#word-cloud-section" class="list-group-item list-group-item-action">Generate Word Cloud</a>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <!-- Upload form for transcription -->
+                <section id="transcribe-section" class="mb-4">
+                    <h2>Transcribe Audio</h2>
+                    <form action="/transcribe" enctype="multipart/form-data" method="post">
+                        <div class="mb-3">
+                            <label for="transcribe-file" class="form-label">Select audio for transcription:</label>
+                            <input class="form-control" type="file" id="transcribe-file" name="file" accept="audio/*">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Transcribe</button>
+                    </form>
+                </section>
+
+                <!-- Upload form for language detection -->
+                <section id="language-detection-section" class="mb-4">
+                    <h2>Detect Language</h2>
+                    <form action="/language-detection" enctype="multipart/form-data" method="post">
+                        <div class="mb-3">
+                            <label for="language-file" class="form-label">Select audio for language detection:</label>
+                            <input class="form-control" type="file" id="language-file" name="file" accept="audio/*">
+                        </div>
+                        <button type="submit" class="btn btn-warning">Detect Language</button>
+                    </form>
+                </section>
+
+                <!-- Upload form for word cloud -->
+                <section id="word-cloud-section" class="mb-4">
+                    <h2>Generate Word Cloud</h2>
+                    <form action="/word-cloud" enctype="multipart/form-data" method="post">
+                        <div class="mb-3">
+                            <label for="wordcloud-file" class="form-label">Select audio for word cloud:</label>
+                            <input class="form-control" type="file" id="wordcloud-file" name="file" accept="audio/*">
+                        </div>
+                        <button type="submit" class="btn btn-success">Generate Word Cloud</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

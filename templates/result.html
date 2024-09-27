@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Results</h1>
+
+        <!-- Display the transcription result -->
+        {% if transcription %}
+        <section class="mb-4">
+            <h2>Transcription</h2>
+            <p class="transcription">{{ transcription }}</p>
+        </section>
+        {% endif %}
+
+        <!-- Display the language detection result -->
+        {% if language %}
+        <section class="mb-4">
+            <h2>Detected Language</h2>
+            <p class="language">{{ language }}</p>
+        </section>
+        {% endif %}
+
+        <!-- Display the word cloud image -->
+        {% if wordcloud_url %}
+        <section class="mb-4">
+            <h2>Word Cloud</h2>
+            <img src="{{ wordcloud_url }}" class="img-fluid" alt="Word Cloud">
+        </section>
+        {% endif %}
+
+        <a href="/" class="btn btn-secondary">Go back</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
