@@ -80,5 +80,3 @@ This way, you or others can install all required packages using:
 pip install -r requirements.txt
 ```
 
-**a.** Do you want help setting up `requirements.txt` or a Dockerfile for easy deployment?
-**b.** Should I assist you in configuring environment variables or handling model downloads in a specific directory?
