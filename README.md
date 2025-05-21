@@ -79,4 +79,10 @@ This way, you or others can install all required packages using:
 ```bash
 pip install -r requirements.txt
 ```
+![WhatsApp Image 2025-05-21 at 22 41 50_2428d1c0](https://github.com/user-attachments/assets/40c95630-7fff-41d8-ae57-46c261280ebe)
+![WhatsApp Image 2025-05-21 at 22 41 51_97932e5f](https://github.com/user-attachments/assets/735f73f1-a155-4abc-8cd9-aeb1fe776615)
+![transcriber_1](https://github.com/user-attachments/assets/01ebdd2e-10de-419b-a701-771f264d5600)
+![transcriber_2](https://github.com/user-attachments/assets/12850d58-30c6-49e7-85ae-032279a0bc00)
+
+
 
